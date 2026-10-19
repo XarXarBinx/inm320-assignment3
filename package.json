@@ -1,0 +1,20 @@
+{
+    "name": "3---zara-syed_css-precompiler",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch public/assets/scss/style.scss:public/assets/css/style.css",
+        "serve": "lite-server --baseDir=public",
+        "start": "concurrently \"npm run sass\" \"npm run serve\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "devDependencies": {
+        "concurrently": "^10.0.6",
+        "lite-server": "^2.6.1",
+        "sass": "^1.105.2"
+    }
+}
